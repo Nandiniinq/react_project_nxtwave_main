@@ -1,0 +1,189 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: #333;
+}
+
+.header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.create-list-button-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.create-list-button, .update-button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-list-button:hover, .update-button:hover {
+  background-color: #0056b3;
+}
+
+.lists-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 20px;
+}
+
+.list-container {
+  width: 30%;
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.list-container label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.list-container label span {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.scrollable-list {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 10px;
+}
+
+.scrollable-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.scrollable-list li {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 10px;
+  cursor: pointer;
+  position: relative; /* Enable positioning for the arrows */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding-bottom: 30px; /* Add padding to make space for arrows */
+}
+
+.scrollable-list li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Right Arrow (List 1) */
+.scrollable-list li .arrow-right {
+  position: absolute;
+  right: 10px;
+  bottom: 5px; /* Move the arrow down a bit */
+  font-size: 18px;
+  color: #666;
+}
+
+/* Left Arrow (List 2) - Now positioned on the right side of List 2 */
+.scrollable-list li .arrow-left {
+  position: absolute;
+  right: 10px; /* Position the left arrow on the right side */
+  bottom: 5px; /* Move the arrow down a bit */
+  font-size: 18px;
+  color: #666;
+}
+
+.scrollable-list h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.scrollable-list p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.failure-view {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.failure-view h1 {
+  font-size: 24px;
+  color: red;
+}
+
+.failure-view p {
+  font-size: 16px;
+  color: #555;
+}
+
+.failure-view .retry-button {
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.failure-view .retry-button:hover {
+  background-color: #0056b3;
+}
+
+/* Update & Cancel Button Container */
+.update-container {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.update-button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.update-button:hover {
+  background-color: #0056b3;
+}
+
+.cancel-button {
+  background-color: white;
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cancel-button:hover {
+  background-color: #f5f5f5;
+  color: #333;
+}
